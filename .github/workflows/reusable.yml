@@ -1,0 +1,15 @@
+name: Main workflow
+
+on:
+  workflow_call:
+    inputs:
+      machine:
+        type: string
+        required: false
+        default: ubuntu-latest
+
+jobs:
+  reusable_job:
+    runs-on: ${{ inputs.machine }}
+    steps:
+      - run: echo "ok"
