@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: ./.github/workflows/reusable.yml
+      - uses: manferlo81/reusable-workflow-test/.github/workflows/reusable.yml@main
 
   job2:
     runs-on: ubuntu-latest
