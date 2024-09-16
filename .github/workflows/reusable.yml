@@ -2,14 +2,9 @@ name: Reusable workflow
 
 on:
   workflow_call:
-    inputs:
-      machine:
-        type: string
-        required: false
-        default: ubuntu-latest
 
 jobs:
   reusable_job:
-    runs-on: ${{ inputs.machine }}
+    runs-on: ubuntu-latest
     steps:
       - run: echo "ok"
